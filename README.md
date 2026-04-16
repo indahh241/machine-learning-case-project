@@ -119,9 +119,10 @@ Silhouette Score
 Davies-Bouldin Index
 
 🧠 Kesimpulan
-Model Random Forest memberikan performa terbaik pada klasifikasi dan regresi
-Model KMeans paling optimal untuk segmentasi pelanggan
-DBSCAN kurang cocok untuk pola dataset yang digunakan
+Model Random Forest memberikan performa terbaik pada klasifikasi dan regresi.
+Model KMeans paling optimal untuk segmentasi pelanggan, dengan performa yang setara dengan Agglomerative Clustering dan DBSCAN setelah preprocessing data.
+
+Hal ini menunjukkan bahwa kualitas preprocessing sangat berpengaruh terhadap hasil clustering.
 
 🚀 Cara Menjalankan Project
 
