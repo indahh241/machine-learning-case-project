@@ -41,12 +41,10 @@ Target: Heating_Load
 Digunakan untuk memprediksi kebutuhan energi bangunan
 
 3. Customer Dataset (Clustering)
-Jumlah data: 1000
-Fitur utama:
-Age
-Annual Income
-Spending Score
-Digunakan untuk segmentasi pelanggan
+Jumlah data awal: 200
+Jumlah data setelah preprocessing & filtering: 59
+
+Digunakan untuk melakukan segmentasi pelanggan berdasarkan pola perilaku dan kemampuan finansial.
 
 ⚙️ Tahapan Machine Learning
 
@@ -92,8 +90,14 @@ Semua model > 0.96
 
 ✅ Clustering
 Model terbaik: KMeans
-Silhouette Score: ~0.57
-DBSCAN kurang optimal pada dataset ini
+
+Silhouette Score (hasil evaluasi pada berbagai data splitting):
+
+70:30 → 0.8024
+80:20 → 0.7978
+90:10 → 0.7874
+
+Agglomerative Clustering dan DBSCAN menghasilkan performa yang setara dengan KMeans, menunjukkan bahwa struktur cluster pada data sudah terbentuk dengan sangat jelas setelah preprocessing.
 
 📊 Evaluasi Model
 
