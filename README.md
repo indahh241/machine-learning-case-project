@@ -1,13 +1,15 @@
-📊 Machine Learning Case Project – ILKOM 2025/2026
+🚀 Machine Learning Case Project – ILKOM 2025/2026
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.9-blue?logo=python"> <img src="https://img.shields.io/badge/Library-Scikit--Learn-orange?logo=scikitlearn"> <img src="https://img.shields.io/badge/Status-Completed-success"> <img src="https://img.shields.io/badge/Type-Machine%20Learning-purple"> </p>
+
 📌 Deskripsi Project
 
-Project ini merupakan tugas kecil mata kuliah Machine Learning yang bertujuan untuk membangun dan membandingkan beberapa model Machine Learning menggunakan tiga pendekatan:
+Project ini merupakan tugas mata kuliah Machine Learning ILKOM 2025/2026 yang bertujuan untuk membangun dan membandingkan model Machine Learning menggunakan tiga pendekatan:
 
 Klasifikasi
 Regresi
 Clustering
 
-Setiap model dibangun melalui tahapan lengkap Machine Learning mulai dari data understanding hingga model evaluation.
+Setiap model dibangun melalui tahapan lengkap Machine Learning.
 
 📂 Struktur Project
 machine-learning-case-project/
@@ -29,32 +31,26 @@ machine-learning-case-project/
 └── README.md
 
 📊 Dataset yang Digunakan
-
-1. Breast Cancer Dataset (Klasifikasi)
+🔬 Klasifikasi – Breast Cancer Dataset
 Jumlah data: 569
 Target: diagnosis (0 = jinak, 1 = ganas)
+Tujuan: Prediksi kanker payudara
 
-Digunakan untuk memprediksi jenis kanker payudara
-2. Energy Efficiency Dataset (Regresi)
+🏢 Regresi – Energy Efficiency Dataset
 Jumlah data: 768
 Target: Heating_Load
-Digunakan untuk memprediksi kebutuhan energi bangunan
+Tujuan: Prediksi kebutuhan energi
 
-3. Customer Dataset (Clustering)
-Jumlah data awal: 200
-Jumlah data setelah preprocessing & filtering: 59
-
-Digunakan untuk melakukan segmentasi pelanggan berdasarkan pola perilaku dan kemampuan finansial.
+🛍️ Clustering – Customer Dataset
+Data awal: 200
+Setelah preprocessing: 59 data
+Digunakan untuk segmentasi pelanggan berdasarkan:
+Annual Income
+Spending Score
 
 ⚙️ Tahapan Machine Learning
-
-Project ini mencakup tahapan lengkap:
-
 Data Understanding
 Data Preprocessing
-Missing value handling
-Encoding
-Scaling
 Exploratory Data Analysis (EDA)
 Data Splitting (70:30, 80:20, 90:10)
 Model Building
@@ -79,7 +75,6 @@ Agglomerative Clustering
 DBSCAN
 
 📈 Hasil Model
-
 ✅ Klasifikasi
 Akurasi tertinggi: 100% (SVM & Random Forest)
 Semua model > 95%
@@ -89,57 +84,46 @@ R² Score tertinggi: ~0.99 (Random Forest)
 Semua model > 0.96
 
 ✅ Clustering
-Model terbaik: KMeans
-
-Silhouette Score (hasil evaluasi pada berbagai data splitting):
-
+Model terbaik: K-Means
+Silhouette Score:
 70:30 → 0.8024
 80:20 → 0.7978
 90:10 → 0.7874
 
-Agglomerative Clustering dan DBSCAN menghasilkan performa yang setara dengan KMeans, menunjukkan bahwa struktur cluster pada data sudah terbentuk dengan sangat jelas setelah preprocessing.
+Agglomerative dan DBSCAN menghasilkan performa yang setara.
 
 📊 Evaluasi Model
-
-Klasifikasi:
+1. Klasifikasi
 Accuracy
 Precision
 Recall
 F1-score
 Confusion Matrix
 
-Regresi:
+2. Regresi
 MAE
 MSE
 RMSE
 R² Score
 
-Clustering:
+3. Clustering
 Silhouette Score
 Davies-Bouldin Index
 
 🧠 Kesimpulan
-Model Random Forest memberikan performa terbaik pada klasifikasi dan regresi.
-Model KMeans paling optimal untuk segmentasi pelanggan, dengan performa yang setara dengan Agglomerative Clustering dan DBSCAN setelah preprocessing data.
+Random Forest terbaik untuk klasifikasi dan regresi
+K-Means terbaik untuk clustering
+Preprocessing sangat berpengaruh terhadap hasil
 
-Hal ini menunjukkan bahwa kualitas preprocessing sangat berpengaruh terhadap hasil clustering.
-
-🚀 Cara Menjalankan Project
-
-Install library:
+🚀 Cara Menjalankan
+Install library
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-Jalankan masing-masing file:
+Jalankan program
 python classification/breast_cancer_model.py
 python regression/energy_efficiency_model.py
 python clustering/store_customers_model.py
 
-
 👩‍💻 Author
-
-NAMA : Indah Haerunnisa
-NIM  : F1G123045
-
-📌 Catatan
-
-Project ini dibuat untuk memenuhi tugas mata kuliah Machine Learning dan dapat dikembangkan lebih lanjut untuk implementasi berbasis web atau aplikasi.
+Indah Haerunnisa
+NIM: F1G123045
