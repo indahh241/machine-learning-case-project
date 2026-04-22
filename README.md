@@ -16,18 +16,21 @@ Aplikasi dapat langsung diakses tanpa instalasi melalui link berikut:
 
 👉 https://f1g123045c-clustering.streamlit.app/
 
-Cara Menggunakan Web:
-1. Buka link di atas
-2. Upload dataset CSV
-3. Pilih fitur yang ingin dianalisis
+⚙️ Cara Menggunakan Web
+Upload dataset CSV
+Pilih fitur yang ingin dianalisis
 Pilih mode:
-Auto (rekomendasi sistem)
-Manual (pilih model sendiri)
-Lihat hasil:
-Model terbaik
-Visualisasi cluster
-Insight & saran otomatis
-Download hasil clustering
+Auto (Rekomendasi Sistem) → sistem memilih model terbaik secara otomatis
+Manual (Pilih Model Sendiri) → pengguna menentukan model yang digunakan
+Lihat hasil analisis:
+Model terbaik (berdasarkan Silhouette Score)
+Hyperparameter tuning (penentuan K optimal)
+Visualisasi cluster (scatter, distribusi, dll)
+Elbow Method
+PCA 2D & 3D visualization
+Insight & rekomendasi otomatis
+Cluster profiling
+Download hasil clustering dalam bentuk CSV
 
 📌 Catatan:
 Web ini berjalan di cloud (Streamlit Cloud), sehingga:
@@ -149,11 +152,18 @@ Web app memiliki fitur:
 
 Upload dataset sendiri
 Auto & Manual model selection
-Elbow Method Visualization
-PCA 2D & 3D Visualization
-Smart Insight & Recommendation
-Cluster Profiling
-Download hasil
+Data preprocessing otomatis (cleaning, encoding, scaling)
+Feature selection interaktif
+Data filtering (opsional untuk optimasi cluster)
+Exploratory Data Analysis (EDA)
+Correlation matrix visualization
+Hyperparameter tuning otomatis (KMeans)
+Data splitting experiment (evaluasi performa model)
+Elbow Method visualization
+PCA 2D & 3D visualization
+Cluster profiling (rata-rata tiap cluster)
+Insight & rekomendasi otomatis
+Download hasil clustering
 
 🧠 Kesimpulan
 Random Forest terbaik untuk klasifikasi dan regresi
